@@ -21,7 +21,7 @@ export default {
       const token = await this.$auth.getTokenSilently();
 
       // Use Axios to make a call to the API
-      const { data } = await axios.get("https://localhost:44367/api/private", {
+      const { data } = await axios.get("https://localhost:44345/api/private", {
         headers: {
           Authorization: `Bearer ${token}`    // send the access token through the 'Authorization' header
         }
